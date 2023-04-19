@@ -1,1 +1,1 @@
-# internship-miniprojects
+https://projex2424.netlify.app
