@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projetcs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <body>
+        <h2 style="margin-top: 50px;margin-left: 200px;"><u>First Miniproject</u></h2>
+        <center>
+        <div class="h2">
+            <h2> TO DO LIST</h2>
+            <input id="IF" type="text">&nbsp;<button id="add">+</button>
+            <div class="items" id="itemid"> </div>
+        </div>
+        </center>
+        <script>
+            let addButton=document.getElementById('add')
+            let todoitem=document.getElementById('itemid')
+            let inputField=document.getElementById('IF')
+    
+            addButton.addEventListener('click',function(){
+                var paragraph=document.createElement('p');
+                paragraph.innerText=inputField.value;
+                paragraph.classList.add('paragraph-styling');
+                todoitem.appendChild(paragraph);
+                inputField.value="";
+            })
+        </script>
+        <div class="clock">
+            <div class="num num1">
+                <div>1</div>
+            </div>
+            <div class="num num2">
+                <div>2</div>
+            </div>
+            <div class="num num3">
+                <div>3</div>
+            </div>
+            <div class="num num4">
+                <div>4</div>
+            </div>
+            <div class="num num5">
+                <div>5</div>
+            </div>
+            <div class="num num6">
+                <div>6</div>
+            </div>
+            <div class="num num7">
+                <div>7</div>
+            </div>
+            <div class="num num8">
+                <div>8</div>
+            </div>
+            <div class="num num9">
+                <div>9</div>
+            </div>
+            <div class="num num10">
+                <div>10</div>
+            </div>
+            <div class="num num11">
+                <div>11</div>
+            </div>
+            <div class="num num12">
+                <div>12</div>
+            </div>
+    
+            <div class="hand" id="sec" style="transform: rotate(354deg);">
+                <div class="sec"></div>
+            </div>
+            <div class="hand" id="min" style="transform: rotate(185.9deg);">
+                <div class="min"></div>
+            </div>
+            <div class="hand" id="hour" style="transform: rotate(615.492deg);">
+                <div class="hour"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const secDiv = document.getElementById('sec');
+    const minDiv = document.getElementById('min');
+    const hourDiv = document.getElementById('hour');
+    
+    setInterval(updateClock, 1000);
+    
+    function updateClock(){
+        let date = new Date();
+        let sec = date.getSeconds() / 60;
+        let min = (date.getMinutes() + sec) / 60;
+        let hour = (date.getHours() + min) / 12;
+    
+        secDiv.style.transform = "rotate(" + (sec * 360) + "deg)";
+        minDiv.style.transform = "rotate(" + (min * 360) + "deg)";
+        hourDiv.style.transform = "rotate(" + (hour * 360) + "deg)";
+    }
+    
+    updateClock(); 
+        </script>
+        <h2 style="margin-top: 150px;margin-left: 200px;"><u>Second Miniproject</u></h2>
+        <center>
+        <div class="login-page">
+        <h2>Login form</h2><br>
+        <div class="form">
+            <form class="login-form">
+            <input type="text" placeholder="username"><br><br>
+            <input type="password" placeholder="password"><br><br>
+            <button type="button">LOGIN</button><br>
+            <p class="msg">Not Registered?<a href="file:///C:/Users/Ganesh/Desktop/REG/rform.html">Register</a></p>
+        </form></div></div></center>
+        <br><br>
+        <h1 class="h1">Registration form</h1>
+         
+             <fieldset class="hlo">
+             <center>
+             <label>Name:</label>
+             <input type="text" placeholder="Name"><br><br>
+             <label>Password:</label>
+             <input type="password"><br><br>
+             <label>conform password:</label>
+             <input type="password"><br><br>
+             <label>phone number:</label>
+             <input type="numbers"><br><br>
+             <label>Gender:</label>
+             <input type="radio" name="i">Male
+             <input type="radio" name="i">female<br><br>
+             <label>Language known:</label><br><br>
+             <input type="checkbox">TELUGU
+             <input type="checkbox">HINDI
+             <input type="checkbox">ENGLISH<br><br>
+             <label>choose your state:</label>
+             <input list="select">
+             <datalist id="select"><option value="A.P"></option><option value="M.P"></option><option value="TELENGANA"></option><option value="MAHARASTRA"></option></datalist><br><br>
+             <p>Already an account<a href="file:///C:/Users/Ganesh/Desktop/MP1/index.html">LOGIN?</a></p><br><br>
+             <button>submit</button><button>print</button>
+              </center></fieldset>
+                 
+    
+    
+    
+    <h2 style="margin-top: 50px;margin-left: 200px;"><u>Thrid Miniproject</u></h2><br>
+    <ul class="user">
+       <li class="lov"><a href="#">CONTACT</a>
+         <div class="dar">
+         
+         <a href="file:///C:/Users/Ganesh/Desktop/cp/phno.html">Phone no</a>
+         <a href="file:///C:/Users/Ganesh/Desktop/cp/email.html">Email-id</a> 
+         <a href="file:///C:/Users/Ganesh/Desktop/cp/loc.html">Location</a> 
+         
+         </div>
+    </li></ul>
+    <form class="mp-3">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvEhNn6IfE3j2PNKAjpbVthgTTFiRMcoKAn5oRcKMC1hk447CdvnWqZpgWYWAn_IcT8es&amp;usqp=CAU" alt="emoji">
+       <h1>AARE GANESH</h1>
+       <p class="p1">"Education is a power to learn lot of knowledge and leaning ability is my power of my stregth,i love to enjoy the coding of web designing."</p>
+       <br>
+       <h3>TECHNICAL SKILLS</h3>
+       <ul>
+           <li><p><strong>Programming Languages:C,Java,Python</strong></p></li>
+           <li><p><strong>Technologies:HTML,CSS,SQL,JS,React Basics,Cyber Security,Blockchain Technologies</strong></p></li>
+       </ul><br>
+       <h3>EDUCATION</h3>
+       <table>
+           <tbody><tr>
+               <th>YEAR</th>
+               <th>STANDARD</th>
+               <th>COLLEGE</th>
+           </tr>
+           <tr>
+               <th>2022-2024</th>
+               <th>B.TECH</th>
+               <th>PSCMR</th>
+           </tr>
+           <tr>
+               <th>2018-2021</th>
+               <th>DIPLOMA</th>
+               <th>MIC CILLEGE OF TECHNOLOGY</th>
+           </tr>
+           <tr>
+               <th>2017-2018</th>
+               <th>SSC</th>
+               <th>S.V.N SCHOOL</th>
+           </tr>
+       </tbody></table><br>
+       <h3>MY PROFILES</h3>
+       <ul>
+           <li><a href="https://www.linkedin.com/in/mr-ganesh-03001a238/">LINKED IN</a></li>
+           <li><a href="https://github.com/login">GIT HUB</a></li>
+       </ul>
+       <br>
+       <h3>MY HOBBIES</h3>
+       <ul>
+           <li><p><strong>play cricket,volleyball</strong></p></li>
+           <li><p><strong>Watch movies,reading books</strong></p></li>
+       </ul><br>
+       <h3>MY PROJECTS</h3>
+       <ul>
+           <li><p><strong>1.python mini projects(snake game,rock paper and scissor)<br>
+               2.portfolio using html &amp; css
+           </strong></p></li>
+    <br>
+    <h2 style="margin-top: 50px;margin-left: 5px;"><u>Fourth Miniproject</u></h2><br><br>
+    <h1 style="text-align: left;">CASIO</h1><br>
+        <div class="camm">
+            <form name="neat">
+                <input type="text" name="display">
+                <input type="button" value="C" onclick="neat.display.value= ''">
+                <br><br>
+                <input type="button" value="9" onclick="neat.display.value+='9'">
+                <input type="button" value="8" onclick="neat.display.value+='8'">
+                <input type="button" value="7" onclick="neat.display.value+='7'">
+                <input type="button" value="+" onclick="neat.display.value+='+'">
+                <br><br>
+                <input type="button" value="6" onclick="neat.display.value+='6'">
+                <input type="button" value="5" onclick="neat.display.value+='5'">
+                <input type="button" value="4" onclick="neat.display.value+='4'">
+                <input type="button" value="-" onclick="neat.display.value+='-'">
+                <br><br>
+                <input type="button" value="3" onclick="neat.display.value+='3'">
+                <input type="button" value="2" onclick="neat.display.value+='2'">
+                <input type="button" value="1" onclick="neat.display.value+='1'">
+                <input type="button" value="*" onclick="neat.display.value+='*'">
+                <br><br>
+                <input type="button" value="." onclick="neat.display.value+='.'">
+                <input type="button" value="0" onclick="neat.display.value+='0'">
+                <input type="button" value="/" onclick="neat.display.value+='/'">
+                <input type="button" value="=" onclick="neat.display.value=eval(neat.display.value)">
+                <br><br>
+            </form>
+        </div>
+    
+    </ul></form></body>
+</body>
+</html>
